@@ -1,0 +1,27 @@
+{
+  "name": "example-npm-gh-pages",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/hiroya-uga/example-npm-gh-pages/issues"
+  },
+  "devDependencies": {
+    "fs-extra": "^8.1.0",
+    "gh-pages": "^3.2.3"
+  },
+  "homepage": "https://github.com/hiroya-uga/example-npm-gh-pages#readme",
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiroya-uga/example-npm-gh-pages.git"
+  },
+  "scripts": {
+    "build": "node build",
+    "deploy": "gh-pages -b docs -d public",
+    "predeploy": "npm run build"
+  }
+}
